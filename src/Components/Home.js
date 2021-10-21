@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-
+import MovieCard from './MovieCard'
 
 
 function Home() {
@@ -14,7 +14,7 @@ function Home() {
             const result = await fetch('http://localhost:3001/movies');
             const json = await result.json();
             const data = json;
-            setMovieList(data[0]?.poster);
+            setMovieList(data);
     
             };
              getOnlineData();
@@ -24,7 +24,7 @@ function Home() {
 
     return(
         <div>
-            <img src={movieList} alt="poster"/>
+            <MovieCard props={movieList}/>
         </div>
     )
 }

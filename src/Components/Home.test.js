@@ -23,4 +23,10 @@ test('Image is displayed', () =>{
     const movieCard = screen.getByRole('img');
     expect(movieCard).toBeInTheDocument()
 })
+test('Image is displayed', () =>{
+    render(<Home/>)
+    const movieCards = screen.getByRoleAll('img');
+    expect(movieCards.length).toBe('67')
+
+})
 

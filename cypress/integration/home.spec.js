@@ -10,7 +10,7 @@ describe("Home page", () => {
     beforeEach(() => {
         cy.visit('/')
     })
-    it("the home page ocontains a title:", () => {
+    it("the home page contains a title:", () => {
       cy.findByRole('heading').should('contain', 'GMDB')
     })
   })
