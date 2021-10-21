@@ -6,3 +6,9 @@ test('renders learn react link', () => {
   const titleElement = screen.getByText(/gmdb/i);
   expect(titleElement).toBeInTheDocument();
 });
+
+test('Renders a Home Button', () =>{
+    render(<NavBar />);
+    const homeButton = screen.getByRole('button') 
+    expect(homeButton).toBeInTheDocument() 
+})

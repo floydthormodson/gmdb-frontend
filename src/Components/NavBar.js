@@ -4,6 +4,7 @@ const NavBar = () => {
     return ( 
         <nav>
             <h3>GMDB</h3> 
+            <button>Home</button>
         </nav> 
     )
 }
