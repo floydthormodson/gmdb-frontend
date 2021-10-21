@@ -38,6 +38,7 @@
   "devDependencies": {
     "@testing-library/cypress": "^8.0.1",
     "@testing-library/react": "^11.2.7",
-    "cypress": "^8.6.0"
+    "cypress": "^8.6.0",
+    "msw": "^0.35.0"
   }
 }
